@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function App() {
   const [count, setCount] = useState(0);
-  const [best, setBest] = useState(0)
+  const [best, setBest] = useState(0);
 
   useEffect(() => {
     setBest((b) => (count > b ? count : b));
@@ -40,9 +40,15 @@ export default function App() {
           <div className="p-6 sm:p-8">
             {/* Header */}
             <div className="space-y-2">
-              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-center">
-                Compteur
+              <h1
+                className="text-2xl sm:text-3xl font-bold tracking-tight text-center
+  bg-gradient-to-r from-white via-red-600 to-white
+  bg-clip-text text-transparent
+  drop-shadow-[0_0_20px_rgba(236,72,153,0.35)]"
+              >
+                COMPTEUR
               </h1>
+
               <p className="text-center text-sm sm:text-base text-white/70">
                 Clique sur les boutons pour modifier le compteur.
               </p>
@@ -94,20 +100,20 @@ export default function App() {
               </button>
 
               <button
-                className="rounded-xl border border-white/10 bg-pink-500/70 px-4 py-2 font-medium text-white hover:bg-pink-500/90 active:scale-[0.98] transition"
+                className="rounded-xl border border-white/10 bg-red-500/70 px-4 py-2 font-medium text-white hover:bg-red-500/90 active:scale-[0.98] transition"
                 onClick={increment}
               >
                 +1
               </button>
 
               <button
-                className="rounded-xl border border-white/10 bg-pink-500/70 px-4 py-2 font-medium text-white hover:bg-pink-500/90 active:scale-[0.98] transition"
+                className="rounded-xl border border-white/10 bg-red-500/70 px-4 py-2 font-medium text-white hover:bg-red-500/90 active:scale-[0.98] transition"
                 onClick={bigIncrement}
               >
                 +10
               </button>
               <button
-                className="rounded-xl border border-white/10 bg-pink-500/70 px-4 py-2 font-medium text-white hover:bg-pink-500/90 active:scale-[0.98] transition"
+                className="rounded-xl border border-white/10 bg-red-500/70 px-4 py-2 font-medium text-white hover:bg-red-500/90 active:scale-[0.98] transition"
                 onClick={bigbigIncrement}
               >
                 +100
@@ -115,17 +121,13 @@ export default function App() {
             </div>
 
             {/* UserCard inside glass section */}
-            <div className="mt-6 rounded-2xl border border-white/10 bg-black/20 p-4">
-              <p className="text-center text-red-300 text-2xl ">INFORMATIONS</p>
-              <UserCard
-                name="Valentin"
-                lastname="MAREK"
-                age={19}
-                job="Etudiant en informatique (développeur full-stack)"
-                best={best}
-                onReset={() => setCount(0)}
-              />
-            </div>
+
+            <UserCard
+              method="Différentes façons de changer votre score"
+              goal="Atteignez le score le plus haut"
+              best={best}
+              onReset={() => setCount(0)}
+            />
           </div>
         </div>
       </div>
