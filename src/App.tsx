@@ -26,12 +26,12 @@ export default function App() {
   return (
     <div className="relative min-h-screen overflow-hidden text-white">
       {/* Fond */}
-      <div className="absolute inset-0 bg-gradient-to-br from-zinc-950 via-pink-500/80 to-zinc-900/50" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-indigo-900/80 to-indigo-700/60" />
 
       {/* ronds colorés */}
-      <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-orange-600/70 blur-3xl" />
-      <div className="absolute top-1/3 -right-40 h-[520px] w-[520px] rounded-full bg-red-500/65 blur-3xl" />
-      <div className="absolute -bottom-48 left-1/3 h-[520px] w-[520px] rounded-full bg-yellow-500/50 blur-3xl" />
+      <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-indigo-600/60 blur-3xl" />
+      <div className="absolute top-1/3 -right-40 h-[520px] w-[520px] rounded-full bg-indigo-500/95 blur-3xl" />
+      <div className="absolute -bottom-48 left-1/3 h-[520px] w-[520px] rounded-full bg-indigo-400/90 blur-3xl" />
 
       {/* Contenu */}
       <div className="relative z-10 min-h-screen flex items-center justify-center p-6">
@@ -42,7 +42,7 @@ export default function App() {
             <div className="space-y-2">
               <h1
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-center
-  bg-gradient-to-r from-white via-red-600 to-white
+  bg-gradient-to-r from-indigo-500 to-white
   bg-clip-text text-transparent
   drop-shadow-[0_0_20px_rgba(236,72,153,0.35)]"
               >
@@ -100,20 +100,20 @@ export default function App() {
               </button>
 
               <button
-                className="rounded-xl border border-white/10 bg-red-500/70 px-4 py-2 font-medium text-white hover:bg-red-500/90 active:scale-[0.98] transition"
+                className="rounded-xl border border-white/10 bg-indigo-500/70 px-4 py-2 font-medium text-white hover:bg-indigo-500/90 active:scale-[0.98] transition"
                 onClick={increment}
               >
                 +1
               </button>
 
               <button
-                className="rounded-xl border border-white/10 bg-red-500/70 px-4 py-2 font-medium text-white hover:bg-red-500/90 active:scale-[0.98] transition"
+                className="rounded-xl border border-white/10 bg-indigo-500/70 px-4 py-2 font-medium text-white hover:bg-indigo-500/90 active:scale-[0.98] transition"
                 onClick={bigIncrement}
               >
                 +10
               </button>
               <button
-                className="rounded-xl border border-white/10 bg-red-500/70 px-4 py-2 font-medium text-white hover:bg-red-500/90 active:scale-[0.98] transition"
+                className="rounded-xl border border-white/10 bg-indigo-500/70 px-4 py-2 font-medium text-white hover:bg-indigo-500/90 active:scale-[0.98] transition"
                 onClick={bigbigIncrement}
               >
                 +100

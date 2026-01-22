@@ -48,7 +48,7 @@ export function UserCard({
       {/* Action */}
       <button
         onClick={onReset}
-        className="mt-4 w-full rounded-xl bg-red-500/80 py-2 font-medium text-white hover:bg-red-500 transition active:scale-[0.98]"
+        className="mt-4 w-full rounded-xl bg-indigo-500/80 py-2 font-medium text-white hover:bg-red-500 transition active:scale-[0.98]"
       >
         Réinitialiser le compteur
       </button>
